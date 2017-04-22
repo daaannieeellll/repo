@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link type="text/css" rel="stylesheet" href="../css/style.css"/>
+<title>Contact</title>
+<meta charset="UTF-8"/>
+</head>
+<body>
+<header> <!--ALLEEN NAVIGATION BAR -->
+  <nav class="navigation_bar">
+      <ul class="menubar">
+      <li><a href="../index.html" class="NavBarItem">Home</a></li>
+      <li>
+        <ul class="dropdown" onclick="void(0)">
+         <li class="dropbutton">Stonebraker</li>
+         <li>
+           <ul class="dropdown-content">
+             <li><a href="../stonebraker/stonebraker.html" class="topItem">Stonebraker</a></li>
+             <li><a href="../stonebraker/ingres.html">Ingres</a></li>
+             <li><a href="../stonebraker/postgres.html">Postgres</a></li>
+             <li><a href="../stonebraker/students.html" class="bottomItem">Studenten</a></li>
+           </ul>
+         </li>
+        </ul>
+      </li>
+      <li>
+        <ul class="dropdown" onclick="void(0)">
+          <li class="dropbutton">Turing</li>
+          <li>
+            <ul class="dropdown-content">
+              <li><a href="../turing/turing.html" class="topItem">Turing</a></li>
+              <li><a href="../turing/award.html">De Turing Award</a></li>
+              <li><a href="../turing/publicaties.html">Publicaties</a></li>
+              <li><a href="../turing/winners.html">Winnaars</a></li>
+              <li><a href="../turing/facts.html" class="bottomItem">Feitjes</a></li>
+            </ul>
+          </li>      
+      </ul>
+      <li><a href="../contact/contact.html" class="NavBarItem">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main> <!--MAIN CONTENT OF PAGE-->
+  <a href="#" class="back-to-top"><img src="../media/images/double-arrow-up-512.png" alt="Arrow-Up"></a>
+  <div class="titlescreen">  
+    <p class="title">CONTACT</p>
+  </div>
+
+  <article class="welcometext">
+      <h2>Meer informatie?</h2>
+      <hr class="hr-contact"/>
+    <p><strong>Daniel:</strong> <em>daniel@osprey.ath.cx</em><br />
+      <strong>Celal:</strong> <em>celal_sagir@hotmail.com</em>
+    </p>
+    <p>
+      V4D, 2016-2017<br />
+      Docenten:<em> Melles C.L.</em><br />
+      Dalton Lyceum Barendrecht
+    </p>
+    <form action="mailto:celal_sagir@hotmail.com;daniel@osprey.ath.cx?subject=Alan%20Turing%20Website" method="post" id="form" enctype="text/plain">
+    <fieldset>
+      <legend>Feedback</legend>
+        <br />
+    <label for="Naam">Naam:</label><br />
+    <input type="text" placeholder="Uw naam" required="required" name="Naam" id="Naam"/>
+        <br /><br />
+    <label for="Email">Email:</label><br />
+    <input type="email" placeholder="Uw e-mail" required="required" name="Email" id="Email"/>
+        <br /><br />
+    <label for="Woonplaats">Woonplaats:</label><br />
+    <input type="text" placeholder="Uw woonplaats" name="Woonplaats" id="Woonplaats"/>
+        <br /><br />
+    <label for="Tevredenheid">Hoe (on)tevreden ben ik over deze website?</label>
+    <select name="Tevredenheid" id="Tevredenheid">
+          <option value="zeer tevreden">Zeer tevreden</option>
+          <option value="tevreden">Tevreden</option>
+          <option value="neutraal">Niet tevreden, maar ook niet ontevreden</option>
+          <option value="ontevreden">Ontevreden</option>
+          <option value="zeer ontevreden">Zeer ontevreden</option>
+    </select>
+    <br /><br />
+    Hoe zou ik deze site beschrijven?
+        <br />
+          <input value="origineel" name="Beschrijving" type="checkbox"/>Origineel<br />
+          <input value="standaard" name="Beschrijving" type="checkbox"/>Niet bijzonder<br />
+          <input value="goede kwaliteit" name="Beschrijving" type="checkbox"/>Goede kwaliteit<br />
+          <input value="slechte kwaliteit" name="Beschrijving" type="checkbox"/>Slechte kwaliteit<br />
+          <input value="gebruiksvriendelijk" name="Beschrijving" type="checkbox"/>Gebruiksvriendelijk<br />
+          <input value="hard to use" name="Beschrijving" type="checkbox"/>Moeilijk te gebruiken<br />
+          <input value="duidelijk" name="Beschrijving" type="checkbox"/>Duidelijk<br />
+          <input value="onoverzichtelijk" name="Beschrijving" type="checkbox"/>Onoverzichtelijk<br /><br />
+    Geslacht:
+      <input type="radio" name="Geslacht" value="Man"/>Man 
+      <input type="radio" name="Geslacht" value="Vrouw"/>Vrouw
+    <br /><br />
+  <textarea placeholder="Overig comentaar kan hier geplaatst worden." name="Commentaar" rows="5" cols="22" data-role="none"></textarea>
+      <br/><br />
+    <label for="cijfer">Ik beoordeel deze site met een </label>
+        <select name="Cijfer" id="cijfer">
+        <option value=" 10">10</option>
+        <option value=" 9" selected="selected">9</option>
+        <option value=" 8">8</option>
+        <option value=" 7">7</option>
+        <option value=" 6">6</option>
+        <option value=" 5">5</option>
+        <option value=" 4">4</option>
+        <option value=" 3">3</option>
+        <option value=" 2">2</option>
+        <option value=" 1">1</option>
+      </select>
+        <br /><br />
+      <input type="submit" value="Verstuur" data-inline="true"/>
+      <input type="reset" value="Opnieuw" data-inline="true"/>
+  </fieldset>
+  </form>
+  </article> 
+</main>
+<footer ><!--FOOTER-->
+  <a href="../m/index.html#contact">Naar mobiele site.</a>  
+  <p>&copy; 2017 Cel&acirc;l Sagir en Daniel Kuiper</p>
+</footer>
+</body>
+</html>

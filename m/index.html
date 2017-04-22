@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<link rel="stylesheet" href="../css/jquery.mobile.structure-1.4.5.min.css" />
+	<link rel="stylesheet" href="../css/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="../css/Stonebraker.css" />
+    <link rel="stylesheet" href="../css/mobile.css" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/jquery.mobile-1.4.5.min.js"></script>
+	<title>Welkom</title>
+    </head>
+<body>
+
+    
+<!--Welcome Page-->
+<section data-role="page" id="home">
+    
+    <div data-role="panel" id="Panel" data-display="reveal" data-position-fixed="true" data-animate="true" data-inline="true">
+        <a data-role="button" data-rel="close" data-icon="delete" data-iconpos="notext" data-iconshadow="false"></a>
+            <h2>Welkom</h2>
+        <ul data-role="listview" data-filter="true">
+            <li class="selected"><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li data-role="list-divider">Michael Stonebraker</li>
+            <li><a href="#stonebraker">Michael Stonebraker</a></li>
+            <li><a href="#ingres">Ingres</a></li>
+            <li><a href="#postgres">Postgres</a></li>
+            <li><a href="#students">Studenten</a></li>
+            <li data-role="list-divider">Alan Turing</li>
+            <li><a href="#turing">Alan Turing</a></li>
+            <li><a href="#award">De Turing Award</a></li>
+            <li><a href="#publicaties">Publicaties</a></li>
+            <li><a href="#winners">Winnaars</a></li>
+            <li><a href="#facts">Feitjes</a></li>
+        </ul>
+    </div>
+
+
+    <header data-role="header" class="ui-overlay-shadow">
+    <h1>Welkom</h1>
+    <a href="#Panel" class="jqm-navmenu-link" data-icon="bars" data-iconpos="notext">Navigation</a>
+    </header>
+    
+    <div class="page" data-role="content" style="padding:0;">
+                <div class="images">
+                    <img src="../media/images/hero.jpg" alt="Michael Stonebraker" class="ui-overlay-shadow">
+                </div>
+                <p>De ACM A.M. Turing Award is een prijs die jaarlijks door de “Association for Computing Machinery” (ACM) wordt uitgereikt aan een persoon die een (duurzame en belangrijke) bijdrage heeft geleverd aan de informatica en de computerwereld. De prijs wordt ook wel gezien als de ‘nobelprijs van de informatica’. <br>
+                Op onze site kunt u meer over de winnaar van 2014, Michael Stonebraker, te weten komen. Ook kunt u meer te weten komen over de man waar de prijs naar is vernoemd: Alan Turing.
+                </p>
+                <div class="audio">
+                    <audio controls="controls">
+                        <source src="../media/audio/homepage.ogg" type="audio/ogg" />
+                        <source src="../media/audio/homepage.mp3" type="audio/mpeg" />
+                        Onze excuses, dit audiobestand kan niet worden afgespeeld.
+                    </audio>
+                </div>
+            </div>
+    <footer data-position="fixed">
+        <p>&copy; 2017 Cel&acirc;l Sagir en Daniel Kuiper</p>
+    </footer>
+</section>
+  
+<!-- Contact --> 
+<section data-role="page" id="contact">
+    
+    <div data-role="panel" id="Panel10" data-display="reveal" data-position-fixed="true" data-animate="true" data-inline="true">
+        <a data-role="button" data-rel="close" data-icon="delete" data-iconpos="notext" data-iconshadow="false"></a>
+            <h2>Welkom</h2>
+        <ul data-role="listview" data-filter="true"  >
+            <li><a href="#home">Home</a></li>
+            <li class="selected"><a href="#contact">Contact</a></li>
+            <li data-role="list-divider">Michael Stonebraker</li>
+            <li><a href="#stonebraker">Michael Stonebraker</a></li>
+            <li><a href="#ingres">Ingres</a></li>
+            <li><a href="#postgres">Postgres</a></li>
+            <li><a href="#students">Studenten</a></li>
+            <li data-role="list-divider">Alan Turing</li>
+            <li><a href="#turing">Alan Turing</a></li>
+            <li><a href="#award">De Turing Award</a></li>
+            <li><a href="#publicaties">Publicaties</a></li>
+            <li><a href="#winners">Winnaars</a></li>
+            <li><a href="#facts">Feitjes</a></li>
+        </ul>
+    </div>
+
+
+    <header data-role="header" class="ui-overlay-shadow">
+    <h1>Contact</h1>
+    <a href="#Panel10" class="jqm-navmenu-link" data-icon="bars" data-iconpos="notext">Navigation</a>
+    </header>
+    
+    <div class="page" data-role="content" style="padding:0;">
+                <div class="images">
+                    <img src="../media/images/hero.jpg" alt="Michael Stonebraker" class="ui-overlay-shadow">
+                </div>
+                <p><strong>Daniel:</strong> <em>daniel@osprey.ath.cx</em><br />
+      <strong>Celal:</strong> <em>celal_sagir@hotmail.com</em>
+    </p>
+    <p>
+      V4D, 2016-2017<br />
+      Docenten:<em> Melles C.L.</em><br />
+      Dalton Lyceum Barendrecht
+    </p>
+    <form action="mailto:celal_sagir@hotmail.com;daniel@osprey.ath.cx?subject=Alan%20Turing%20Website" method="post" id="form" enctype="text/plain">
+    <fieldset>
+      <legend>Feedback</legend>
+        <br />
+    <label for="Naam">Naam:</label>
+    <input type="text" placeholder="Uw naam" required="required" name="Naam" data-role="none" id="Naam"/>
+        <br />
+    <label for="Email">Email:</label>
+    <input type="email" placeholder="Uw e-mail" required="required" name="Email" data-role="none" id="Email"/>
+        <br />
+    <label for="Woonplaats">Woonplaats:</label>
+    <input type="text" placeholder="Uw woonplaats" name="Woonplaats" data-role="none" id="Woonplaats"/>
+        <br />
+    <label for="Tevredenheid">Hoe (on)tevreden ben ik over deze website?</label>
+    <select name="Tevredenheid" data-native-menu="false" data-corners="false" data-inline="true" id="Tevredenheid">
+          <option value="zeer tevreden">Zeer tevreden</option>
+          <option value="tevreden">Tevreden</option>
+          <option value="neutraal">Niet tevreden, maar ook niet ontevreden</option>
+          <option value="ontevreden">Ontevreden</option>
+          <option value="zeer ontevreden">Zeer ontevreden</option>
+    </select>
+    <br />
+    <label for="Tevredenheid">Hoe zou ik deze site beschrijven?</label>
+    <select name="Beschrijving" multiple data-native-menu="false" data-corners="false" data-inline="true" id="Beschrijving">
+          <option>Beschrijving</option>
+          <option value="origineel">Origineel</option>
+          <option value="standaard">Niet bijzonder</option>
+          <option value="goede kwaliteit">Goede kwaliteit</option>
+          <option value="slechte kwaliteit">Slechte kwaliteit</option>
+          <option value="gebruiksvriendelijk">Gebruiksvriendelijk</option>
+          <option value="hard to use">Moeilijk te gebruiken</option>
+          <option value="duidelijk">Duidelijk</option>
+          <option value="onoverzichtelijk">Onoverzichtelijk</option>
+    </select>
+    <br />
+    <label for="Geslacht">Geslacht:</label>
+    <select name="Geslacht" data-role="slider" id="Geslacht" data-corners="false">
+      <option value="Vrouw">Vrouw</option> 
+      <option value="Man" selected>Man</option>
+    </select>  
+    <br />
+  <textarea placeholder="Overig comentaar kan hier geplaatst worden." name="Commentaar" rows="5" cols="22" data-role="none"></textarea>
+      <br/> Ik beoordeel deze website met een
+      <input type="range" name="Beoordeling" min="1" max="10" value="9" step="1" data-highlight="true"  data-corners="false">
+      <br />
+      <input type="submit" value="Verstuur" data-inline="true"/>
+      <input type="reset" value="Opnieuw" data-inline="true"/>
+  </fieldset>
+  </form>
+            </div>
+    <footer data-position="fixed">
+        <p>&copy; 2017 Cel&acirc;l Sagir en Daniel Kuiper</p>
+    </footer>
+</section>
+      
+    
+<!--                         -->
+<!--                         -->
+<!-- STONEBRAKER PART BEGINS -->
+<!--                         -->  
+<!--                         -->
+    
+<!-- Ingres -->    
+<section data-role="page" id="ingres">
+    
+    <div data-role="panel" id="Panel1" data-display="reveal" data-position-fixed="true" data-animate="true" data-inline="true">
+        <a data-role="button" data-rel="close" data-icon="delete" data-iconpos="notext" data-iconshadow="false"></a>
+            <h2>Welkom</h2>
+        <ul data-role="listview" data-filter="true">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li data-role="list-divider">Michael Stonebraker</li>
+            <li><a href="#stonebraker">Michael Stonebraker</a></li>
+            <li class="selected"><a href="#ingres">Ingres</a></li>
+            <li><a href="#postgres">Postgres</a></li>
+            <li><a href="#students">Studenten</a></li>
+            <li data-role="list-divider">Alan Turing</li>
+            <li><a href="#turing">Alan Turing</a></li>
+            <li><a href="#award">De Turing Award</a></li>
+            <li><a href="#publicaties">Publicaties</a></li>
+            <li><a href="#winners">Winnaars</a></li>
+            <li><a href="#facts">Feitjes</a></li>
+        </ul>
+    </div>
+
+
+    <header data-role="header" class="ui-overlay-shadow">
+    <h1>Ingres</h1>
+    <a href="#Panel1" class="jqm-navmenu-link" data-icon="bars" data-iconpos="notext">Navigation</a>
+    </header>
+    
+    <div class="page" data-role="content" style="padding:0;">
+                <div class="images">
+                    <img class="png" src="../media/images/5539-logo-ingres-s-.png" alt="Ingres logo" style="width: 98vw; left:10px; top:10px;"/>
+                </div>
+          <p>
+  Het Ingres project is een van de drie projecten waar Michael Stonebraker aan heeft gewerkt in de tijd dat hij   nog bij de universiteit van Berkeley werkte. De andere twee projecten zijn <em>Postgres</em> en <em>Mariposa en Cohera</em>.<br /><br />
+  Toen Michael Stonebraker en collega Eugene Wong de papieren zagen van een onderzoeksproject van IBM, waren ze direct ge&iuml;nteresseerd en besloten ze een eigen project te starten voor onderzoek naar rationele databases. De naam Ingres staat voor <em>Interactive Graphics Retrieval System.</em><br />
+  Met dit systeem was het mogelijk om grote commerci&euml;le programma's te ondersteunen.
+  </p>
+    </div>
+    <footer data-position="fixed">  
+        <p>&copy; 2017 Cel&acirc;l Sagir en Daniel Kuiper</p>
+    </footer>
+</section>
+    
+<!-- Postgres -->    
+<section data-role="page" id="postgres">
+    
+    <div data-role="panel" id="Panel2" data-display="reveal" data-position-fixed="true" data-animate="true" data-inline="true">
+        <a data-role="button" data-rel="close" data-icon="delete" data-iconpos="notext" data-iconshadow="false"></a>
+            <h2>Welkom</h2>
+        <ul data-role="listview" data-filter="true"  >
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li data-role="list-divider">Michael Stonebraker</li>
+            <li><a href="#stonebraker">Michael Stonebraker</a></li>
+            <li><a href="#ingres">Ingres</a></li>
+            <li class="selected"><a href="#postgres">Postgres</a></li>
+            <li><a href="#students">Studenten</a></li>
+            <li data-role="list-divider">Alan Turing</li>
+            <li><a href="#turing">Alan Turing</a></li>
+            <li><a href="#award">De Turing Award</a></li>
+            <li><a href="#publicaties">Publicaties</a></li>
+            <li><a href="#winners">Winnaars</a></li>
+            <li><a href="#facts">Feitjes</a></li>
+        </ul>
+    </div>
+
+
+    <header data-role="header" class="ui-overlay-shadow">
+    <h1>Postgres</h1>
+    <a href="#Panel2" class="jqm-navmenu-link" data-icon="bars" data-iconpos="notext">Navigation</a>
+    </header>
+    
+    <div class="page" data-role="content" style="padding:0;">
+                <div class="images">
+                    <img class="png" src="../media/images/postgresql-logo.png" alt="Postgres logo" style="width: 96vw; left:10px; top:10px;"/>
+                </div>
+          <p>
+Michael Stonebraker heeft samen met zijn (toemalige) collega's, Larry Rowe en Eugene Wong, een nieuw bedrijf gestart. De naam van dit bedrijf was <span class="italic">Relational Technology</span>. Na het oprichten van dit bedrijf, zijn Stonebraker en Rowe aan Postgres begonnen (POST inGRES).<br />
+Dit project zou ondersteuning voor ingewikkelde datatypes moeten bieden en de end-to-end prestaties van data-intensieve applicaties moeten verbeteren. Ook heeft dit project andere "beperkingen" aangepakt. Hierdoor werd het programmeren van de database veel makkelijker en ook was de database een stuk sneller.<br />
+Postgres heeft voor veel commerci&euml;le bedrijven de basis gevormd.
+        </p>
+    </div>
+    <footer data-position="fixed"> 
+        <p>&copy; 2017 Cel&acirc;l Sagir en Daniel Kuiper</p>
+    </footer>
+</section>
+    
+<!-- Stonebraker -->    
+<section data-role="page" id="stonebraker">
+    
+    <div data-role="panel" id="Panel3" data-display="reveal" data-position-fixed="true" data-animate="true" data-inline="true">
+        <a data-role="button" data-rel="close" data-icon="delete" data-iconpos="notext" data-iconshadow="false"></a>
+            <h2>Welkom</h2>
+        <ul data-role="listview" data-filter="true"  >
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li data-role="list-divider">Michael Stonebraker</li>
+            <li class="selected"><a href="#stonebraker">Michael Stonebraker</a></li>
+            <li><a href="#ingres">Ingres</a></li>
+            <li><a href="#postgres">Postgres</a></li>
+            <li><a href="#students">Studenten</a></li>
+            <li data-role="list-divider">Alan Turing</li>
+            <li><a href="#turing">Alan Turing</a></li>
+            <li><a href="#award">De Turing Award</a></li>
+            <li><a href="#publicaties">Publicaties</a></li>
+            <li><a href="#winners">Winnaars</a></li>
+            <li><a href="#facts">Feitjes</a></li>
+        </ul>
+    </div>
+
+
+    <header data-role="header" class="ui-overlay-shadow">
+    <h1>Michael Stonebraker</h1>
+    <a href="#Panel3" class="jqm-navmenu-link" data-icon="bars" data-iconpos="notext">Navigation</a>
+    </header>
+    
+    <div class="page" data-role="content" style="padding:0;">
+                <div class="images">
+                    <img src="../media/images/stonebraker-71-e1427376216899.jpg" alt="Michael Ralph Stonebraker" class="ui-overlay-shadow"/>
+                </div>
+          <p>
+  Michael Ralph Stonebraker (geboren op 11 oktober 1943) is een computerwetenschapper die gespecialiseerd is in databases. De producten en het onderzoek van Stonebraker zijn van veel database-systemen (are central). Ook is hij de oprichter van een aantal grote database bedrijven, waaronder: Ingres, Illustra, Cohera, StreamBase Systems, Vertica, VoltDB, Tamr en Paradigm4. Hij was technisch directeur (CTO) van Informix.<br />
+  Stonebraker heeft verschillende prijzen gewonnen. Enkele hiervan zijn de IEEE John von Neumann Medaille, de eerste SIGMOD Edgar F. Codd innovations award en de ACM Turing Award.</p>
+<p>Michael Stonebraker was Professor Computerwetenschap op de University of California, Berkeley. Hier heeft hij de relationele database systemen Ingres en Postgres ontwikkeld. Tegenwoordig is hij adjunct-professor bij het MIT. Hij heeft hier meegeholpen bij de ontwikkeling van de Aurora, C-Store, H-Store, Morpheus en SciDB systemen.
+  </p>
+    </div>
+    <footer data-position="fixed">  
+        <p>&copy; 2017 Cel&acirc;l Sagir en Daniel Kuiper</p>
+    </footer>
+</section>
+        
+<!-- Students -->    
+<section data-role="page" id="students">
+    
+    <div data-role="panel" id="Panel4" data-display="reveal" data-position-fixed="true" data-animate="true" data-inline="true">
+        <a data-role="button" data-rel="close" data-icon="delete" data-iconpos="notext" data-iconshadow="false"></a>
+            <h2>Welkom</h2>
+        <ul data-role="listview" data-filter="true"  >
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li data-role="list-divider">Michael Stonebraker</li>
+            <li><a href="#stonebraker">Michael Stonebraker</a></li>
+            <li><a href="#ingres">Ingres</a></li>
+            <li><a href="#postgres">Postgres</a></li>
+            <li class="selected"><a href="#students">Studenten</a></li>
+            <li data-role="list-divider">Alan Turing</li>
+            <li><a href="#turing">Alan Turing</a></li>
+            <li><a href="#award">De Turing Award</a></li>
+            <li><a href="#publicaties">Publicaties</a></li>
+            <li><a href="#winners">Winnaars</a></li>
+            <li><a href="#facts">Feitjes</a></li>
+        </ul>
+    </div>
+
+
+    <header data-role="header" class="ui-overlay-shadow">
+    <h1>Studenten</h1>
+    <a href="#Panel4" class="jqm-navmenu-link" data-icon="bars" data-iconpos="notext">Navigation</a>
+    </header>
+    
+    <div class="page" data-role="content" style="padding:0;">
+          <p>
+      Michael Stonebraker heeft ook veel studenten gehad. Hier volgt een lijstje van de belangrijkste:
+  </p>
+    <ul>
+    <li>Daniel Abadi, hij was medeoprichter van Hadapt.</li>
+    <li>Robert Epstein is de oprichter van Sybase.</li>
+    <li>Diane Greene is medeoprichter en voormalig directeur van het bedrijf VMWare.</li>
+    <li>Marti Hearst is professor op de universiteit in Berkeley.</li>
+    <li>Mike Olsen is voormalig directeur van het bedrijf Sleepycat Software. Ook is hij directeur van Cloudera.</li>
+    <li>Dale Skeen is de oprichter van Tibco en Vitria. Van Vitria is hij ook directeur.</li>
+    <li>Anupam Bhide is oprichter en directeur van Calsoft.</li>
+  </ul>
+    </div>
+    <footer data-position="fixed">
+        <p>&copy; 2017 Cel&acirc;l Sagir en Daniel Kuiper</p>
+    </footer>
+</section>
+<!--                         -->
+<!--                         -->
+<!-- STONEBRAKER PART ENDING -->
+<!--                         -->  
+<!--                         -->
+    
+    
+    
+    
+    
+<!--                        -->
+<!--                        -->
+<!--   TURING PART BEGINS   -->
+<!--                        -->  
+<!--                        -->
+    
+<!-- Turing --> 
+<section data-role="page" id="turing">
+    
+    <div data-role="panel" id="Panel5" data-display="reveal" data-position-fixed="true" data-animate="true" data-inline="true">
+        <a data-role="button" data-rel="close" data-icon="delete" data-iconpos="notext" data-iconshadow="false"></a>
+            <h2>Welkom</h2>
+        <ul data-role="listview" data-filter="true"  >
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li data-role="list-divider">Michael Stonebraker</li>
+            <li><a href="#stonebraker">Michael Stonebraker</a></li>
+            <li><a href="#ingres">Ingres</a></li>
+            <li><a href="#postgres">Postgres</a></li>
+            <li><a href="#students">Studenten</a></li>
+            <li data-role="list-divider">Alan Turing</li>
+            <li class="selected"><a href="#turing">Alan Turing</a></li>
+            <li><a href="#award">De Turing Award</a></li>
+            <li><a href="#publicaties">Publicaties</a></li>
+            <li><a href="#winners">Winnaars</a></li>
+            <li><a href="#facts">Feitjes</a></li>
+        </ul>
+    </div>
+
+
+    <header data-role="header" class="ui-overlay-shadow">
+    <h1>Alan Turing</h1>
+    <a href="#Panel5" class="jqm-navmenu-link" data-icon="bars" data-iconpos="notext">Navigation</a>
+    </header>
+    
+    <div class="page" data-role="content" style="padding:0;">
+                <div class="images">
+                    <img src="../media/images/MTE5NDg0MDU1MTUzMTE2Njg3.jpg" alt="Alan Turing" class="ui-overlay-shadow">
+                </div>
+  <p>
+  Alan Turings beste vriend in zijn jeugd was Christopher Morcom. Ze zaten op dezelfde school (Sherborne School) en hadden dezelfde interesses, namelijk natuurwetenschappen. Al sinds zijn jeugd stotterde Alan. Tijdens de pubertijd kwam hij erachter dat hij homoseksueel was en later werd hij verliefd op Christopher. Na de middelbare school gingen Alan en Christopher naar de Universiteit van Cambridge. Christopher overleed in 1930. Dit was een flinke gebeurtenis voor Turing. Na een tijd van verdriet focuste Alan zich meer op zijn studie: wiskunde. Daar had hij het Entscheidungsproblem (beslissingsprobleem) en schreef een artikel genaamd "In Computable Numbers, with an Application to the Entscheidungsproblem". Het Entscheidungsprobleem gaat als volgt: een algoritme die kan beslissen of een bewering waar of niet waar is. In 1936 kwam de Church-Turing-hypothese; een aantal voorwaarden die het algoritme "ja" laat concluderen. Door dit artikel heeft Turing de zogeheten "Logical Computing Machine" bedacht. Dit werd later de Turingmachine genoemd. Wanneer hij van de universiteit afgestudeerd was, ging hij twee jaar bij Alonzo Church aan de Princeton-universiteit in de VS werken. Hierna kwam Turing terug naar Cambridge.
+  </p><p>
+  Tijdens de Tweede Wereldoorlog werkte Alan Turing geheim op de "Government Code and Cypher School", een van de eerste Britse crypto analyse dienst, op het Bletchly Park. Hier werkte Turing verder aan een apparaat dat door Poolse wiskundigen is gemaakt. Dit apparaat kon de codes ontcijferen die het Engima-apparaat die door de Duitsers gebruikt werd, wat uiteindelijk tot de overwinning van de geallieerde zorgde.
+  </p><p>
+  Na de Tweede Wereldoorlog werkte Turing bij de universiteit van Manchester, waar hij Deputy Director of the Computing Laboratory werd. Hij bouwde de Automatic Computing Engine (ACE) en publiceerde in 1950 een artikel genaamd "Computing Machinery and Intelligence" waarin hij het over de Turing heeft. Intussen bleef hij ook in het geheim werken bij Government Communications Headquarters tot 1948 waar hij door zijn homoseksualiteit weg is gestuurd, want dit kon een veiligheidsrisico zijn.
+  </p><p>
+  In 1952 werd Alan Turing opgepakt door homoseksuele handelingen, die in die tijd strafbaar waren. Hij moest in de rechtbank een keuze maken: aan experimentele chemische castratie doen voor een jaar, of een gevangenisstraf. Hij koos voor de experimentele chemische castratie. 7 juni 1954 werd Turing dood gevonden met een appel die, wat mensen dachten, met cyanide vergiftigd was.
+  </p>
+</div>
+    <footer data-position="fixed"> 
+        <p>&copy; 2017 Cel&acirc;l Sagir en Daniel Kuiper</p>
+    </footer>
+</section>
+    
+<!-- Award --> 
+<section data-role="page" id="award">
+    
+    <div data-role="panel" id="Panel6" data-display="reveal" data-position-fixed="true" data-animate="true" data-inline="true">
+        <a data-role="button" data-rel="close" data-icon="delete" data-iconpos="notext" data-iconshadow="false"></a>
+            <h2>Welkom</h2>
+        <ul data-role="listview" data-filter="true"  >
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li data-role="list-divider">Michael Stonebraker</li>
+            <li><a href="#stonebraker">Michael Stonebraker</a></li>
+            <li><a href="#ingres">Ingres</a></li>
+            <li><a href="#postgres">Postgres</a></li>
+            <li><a href="#students">Studenten</a></li>
+            <li data-role="list-divider">Alan Turing</li>
+            <li><a href="#turing">Alan Turing</a></li>
+            <li class="selected"><a href="#award">De Turing Award</a></li>
+            <li><a href="#publicaties">Publicaties</a></li>
+            <li><a href="#winners">Winnaars</a></li>
+            <li><a href="#facts">Feitjes</a></li>
+        </ul>
+    </div>
+
+
+    <header data-role="header" class="ui-overlay-shadow">
+    <h1>De Turing Award</h1>
+    <a href="#Panel6" class="jqm-navmenu-link" data-icon="bars" data-iconpos="notext">Navigation</a>
+    </header>
+    
+    <div data-role="content" style="padding:0;">
+                <div class="images">
+                    <img src="../media/images/turing.jpg" alt="Turing Award" class="ui-overlay-shadow">
+                </div>
+  <p>
+  De ACM A.M. Turing Award is een prijs die jaarlijks door de Association for Computing Machinery (ACM) aan een individu wordt uitgereikt voor een belangrijke en/of grote bijdrage die het heeft geleverd aan de informatica en de computerwereld. De prijs wordt ook wel gezien als de "nobelprijs van de informatica".<br />
+  De eerste winnaar is Alan J. Perlis van de Carnegie Mellon universiteit en de eerste vrouwelijke winnares was Frances E. Allen van IBM in 2006. 
+  </p><p>
+  De prijs is vernoemd naar de bekende wiskundige, Alan Turing. Hij is vaak geëerd om de belangrijke oprichter te zijn van theoretische computerwetenschappen en A.I. (Artificial Intelligence). Van 2007 tot 2013 was de prijs gekoppeld met een geldprijs van $250.000 (€235.987,09) met financiële ondersteuning van Intel en Google. Sinds 2014 is de prijs gekoppeld met een geldprijs van $1.000.000 (€943.948,35) met financiële ondersteuning door alleen Google.
+  </p>
+            </div>
+    <footer data-position="fixed">
+        <p>&copy; 2017 Cel&acirc;l Sagir en Daniel Kuiper</p>
+    </footer>
+</section>
+    
+<!-- Winners --> 
+<section data-role="page" id="winners">
+    
+    <div data-role="panel" id="Panel7" data-display="reveal" data-position-fixed="true" data-animate="true" data-inline="true">
+        <a data-role="button" data-rel="close" data-icon="delete" data-iconpos="notext" data-iconshadow="false"></a>
+            <h2>Welkom</h2>
+        <ul data-role="listview" data-filter="true"  >
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li data-role="list-divider">Michael Stonebraker</li>
+            <li><a href="#stonebraker">Michael Stonebraker</a></li>
+            <li><a href="#ingres">Ingres</a></li>
+            <li><a href="#postgres">Postgres</a></li>
+            <li><a href="#students">Studenten</a></li>
+            <li data-role="list-divider">Alan Turing</li>
+            <li><a href="#turing">Alan Turing</a></li>
+            <li><a href="#award">De Turing Award</a></li>
+            <li><a href="#publicaties">Publicaties</a></li>
+            <li class="selected"><a href="#winners">Winnaars</a></li>
+            <li><a href="#facts">Feitjes</a></li>
+        </ul>
+    </div>
+
+
+    <header data-role="header" class="ui-overlay-shadow">
+    <h1>Winnaars</h1>
+    <a href="#Panel7" class="jqm-navmenu-link" data-icon="bars" data-iconpos="notext">Navigation</a>
+    </header>
+    
+    <div class="page" data-role="content" style="padding:0;">
+                <div class="images">
+                    <img src="../media/images/turingwardwinners.jpg" alt="Lijstje Winnaars" class="ui-overlay-shadow">
+                </div>
+        
+    <div data-role="collapsible">
+        <h4>1966 - Alan J. Perlis</h4>
+        <p>De eerste winnaar. Door zijn invloed op het geavanceerde computer programmering technieken en zijn compiler constructie.</p>
+    </div>
+        
+    <div data-role="collapsible">
+        <h4>1972 - Edsger W. Dijkstra</h4>
+        <p>Voor zijn fundamentele bijdragen aan het programmeren als een hoog, intellectuele uitdaging. Dat de programma's goed moeten worden samengesteld en niet alleen gedebugd worden in correctheid.</p>
+    </div>
+        
+    <div data-role="collapsible">
+        <h4>1977 - John Backus</h4>
+        <p>Voor diepe, invloedrijke en blijvende bijdrage aan het ontwerp van praktische high-level programmeringssystemen. Vooral door zijn werk voor FORTRAN.</p>
+    </div>
+        
+    <div data-role="collapsible">
+        <h4>2002 - Ronald L. Rivest</h4>
+        <p>Voor zijn bijdrage voor het bruikbaar maken van public-key cryptografie in de praktijk.</p>
+    </div>
+        
+    <div data-role="collapsible">
+        <h4>2004 - Vinton G. Cerf, Robert E. Kahn</h4>
+        <p>Voor pionierswerk op internetwerking, met het ontwerp en invoering van fundamentele commmunicatieprotocollen, TCP/IP van internet en voor geïnspireerd leiderschap in netwerken.</p>
+    </div>
+        
+    <div data-role="collapsible">
+        <h4>2005 - Peter Naur</h4>
+        <p>	Voor fundamentele bijdrage aan de programmeertaal en de betekenis van ALGOL 60 tot het compiler ontwerp en tot de kunst en uitvoering van computerprogrammering.</p>
+    </div>
+        
+    <div data-role="collapsible">
+        <h4>2012 - Shafi Goldwasser</h4>
+        <p>Voor transformatief werk dat de complex-theoretische basis van de wetenschap van de cryptografie en in het proces baanbrekend nieuwe methoden voor een efficiënte bevestiging van wiskundige bewijzen in de complexiteitstheorie.</p>
+    </div>
+        
+    <div data-role="collapsible">
+        <h4>2014 - Michael Stonebraker</h4>
+        <p>Voor fundamentele bijdragen aan het idee en het gebruik van moderne databasesystemen gezorgd.</p>
+    </div>
+        
+    <div data-role="collapsible">
+        <h4>2015 - Martin E. Hellman, Whitfield Diffe</h4>
+        <p>Voor een fundamentele bijdrage aan moderne cryptografie gezorgd. Diffie en Hellmans baanbrekende document in 1976 "New Directions in Cryptography" heeft de public-key cryptografie en digitale handtekeningen, wat de bases zijn van de meest gebruikte hedendaagse beveiligingsprotocollen op het internet.</p>
+    </div>
+            </div>
+    <footer data-position="fixed">
+        <p>&copy; 2017 Cel&acirc;l Sagir en Daniel Kuiper</p>
+    </footer>
+</section>
+    
+<!-- Facts --> 
+<section data-role="page" id="facts">
+    
+    <div data-role="panel" id="Panel8" data-display="reveal" data-position-fixed="true" data-animate="true" data-inline="true">
+        <a data-role="button" data-rel="close" data-icon="delete" data-iconpos="notext" data-iconshadow="false"></a>
+            <h2>Welkom</h2>
+        <ul data-role="listview" data-filter="true"  >
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li data-role="list-divider">Michael Stonebraker</li>
+            <li><a href="#stonebraker">Michael Stonebraker</a></li>
+            <li><a href="#ingres">Ingres</a></li>
+            <li><a href="#postgres">Postgres</a></li>
+            <li><a href="#students">Studenten</a></li>
+            <li data-role="list-divider">Alan Turing</li>
+            <li><a href="#turing">Alan Turing</a></li>
+            <li><a href="#award">De Turing Award</a></li>
+            <li><a href="#publicaties">Publicaties</a></li>
+            <li><a href="#winners">Winnaars</a></li>
+            <li class="selected"><a href="#facts">Feitjes</a></li>
+        </ul>
+    </div>
+
+
+    <header data-role="header" class="ui-overlay-shadow">
+    <h1>Feitjes</h1>
+    <a href="#Panel8" class="jqm-navmenu-link" data-icon="bars" data-iconpos="notext">Navigation</a>
+    </header>
+    
+    <div class="page" data-role="content">
+  <article>
+    <h3>Hij gaf al jong aan dat hij een genie was.</h3>
+    <p>Op zijn veertiende kon Turing al ingewikkelde wiskundige problemen oplossen zonder calculus geleerd te hebben.</p>
+  </article>
+  <article>
+    <h3>Alan Turing heeft het idee van moderne computers opgelegd.</h3>
+    <p>In 1936 heeft Turing een document gepubliceerd waarin hij met het idee kwam van een universele Turingmachine, wat alles kon berekenen dat berekend kon worden.</p>
+  </article>
+  <article>
+    <h3>Turing heeft de Duitse Engima codetaal gekraakt in de Tweede Wereldoorlog.</h3>
+    <p>Op 4 september 1939, een dag na het Verenigd Koninkrijk oorlog verklaart tegen Duitsland, meldde Turing bij Bletchley Park. Hij heeft een machine ontwikkeld dat de Engima code van de Duitsers kon kraken.</p>
+  </article>
+  <article>
+    <h3>Alan Turing moest chemische castratie ondergaan omdat hij homoseksueel was.</h3>
+    <p>In 1952, tijdens een onderzoek, gaf Turing toe dat hij een homoseksuele relatie had met Arnold Murray. In die tijd was homoseksualiteit strafbaar in het Verenigd Koninkrijk. Hij had de keuze om experimentele chemische castratie te ondergaan of om celstraf te lijden.</p>
+  </article>
+  <article>
+    <h3>Het Applelogo is niet verwant met Alan Turing.</h3>
+    <p>In een interview met Steve Jobs en Stephen Fry hadden ze het hierover. Stephen Fry zei dat het alleen maar een appel was die een bijt had zodat het niet met een kers werd verward. Steve Jobs heeft dat ook bevestigd en zei "God, we wish it were".</p>
+  </article>
+    </div>
+    <footer data-position="fixed">
+        <p>&copy; 2017 Cel&acirc;l Sagir en Daniel Kuiper</p>
+    </footer>
+</section>
+    
+    <!-- Publicaties --> 
+<section data-role="page" id="publicaties">
+    
+    <div data-role="panel" id="Panel11" data-display="reveal" data-position-fixed="true" data-animate="true" data-inline="true">
+        <a data-role="button" data-rel="close" data-icon="delete" data-iconpos="notext" data-iconshadow="false"></a>
+            <h2>Welkom</h2>
+        <ul data-role="listview" data-filter="true"  >
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li data-role="list-divider">Michael Stonebraker</li>
+            <li><a href="#stonebraker">Michael Stonebraker</a></li>
+            <li><a href="#ingres">Ingres</a></li>
+            <li><a href="#postgres">Postgres</a></li>
+            <li><a href="#students">Studenten</a></li>
+            <li data-role="list-divider">Alan Turing</li>
+            <li><a href="#turing">Alan Turing</a></li>
+            <li><a href="#award">De Turing Award</a></li>
+            <li class="selected"><a href="#publicaties">Publicaties</a></li>
+            <li><a href="#winners">Winnaars</a></li>
+            <li><a href="#facts">Feitjes</a></li>
+        </ul>
+    </div>
+
+
+    <header data-role="header" class="ui-overlay-shadow">
+    <h1>Publicaties</h1>
+    <a href="#Panel11" class="jqm-navmenu-link" data-icon="bars" data-iconpos="notext">Navigation</a>
+    </header>
+    
+    <div class="page" data-role="content" style="padding:0;">
+    <table>
+    <tr>
+      <td>1992</td>
+      <td>Collected works of A.M. Turing, 
+        	Mechanical Intelligence
+	        Morphogenesis
+        	Pure Mathematics
+	        Mathematical Logic</td>
+    </tr>
+    <tr>
+      <td>1937</td>
+      <td>On Computable Numbers, with an Application to the Entscheidungsproblem
+</td>
+    </tr>
+    <tr>
+      <td>1938</td>
+      <td>On Computable Numbers, with an Application to the Entscheidungsproblem: A correction</td>
+    </tr>
+    <tr>
+      <td>1935</td>
+      <td>On the Gaussian Error Function</td>
+    </tr>
+    <tr>
+      <td>1935</td>
+      <td>Equivalence of Left and Right Almost Periodicity</td>
+    </tr>
+    <tr>
+      <td>1938</td>
+      <td>Finite Approximations to Lie Groups</td>
+    </tr>
+    <tr>
+      <td>1938</td>
+      <td>The Extensions of a Group</td>
+    </tr>
+    <tr>
+      <td>1939</td>
+      <td>A Method for the Calculation of the Zeta-Function</td>
+    </tr>
+    <tr>
+      <td>1948</td>
+      <td>Rounding-off Errors in Matrix Processes</td>
+    </tr>
+    <tr>
+      <td>1950</td>
+      <td>The Word problem in Semi-Groups with Cancellation</td>
+    </tr>
+    <tr>
+      <td>1953</td>
+      <td>Some Calculations of the Riemann Zeta-function</td>
+    </tr>
+    <tr>
+      <td>1952</td>
+      <td>"The Chemical Basis of Morphogenesis", Philosophical Transactions of The Royal Society of London</td>
+    </tr>
+  </table>
+            </div>
+    <footer data-position="fixed">
+        <p>&copy; 2017 Cel&acirc;l Sagir en Daniel Kuiper</p>
+    </footer>
+</section>
+<!--                        -->
+<!--                        -->
+<!--   TURING PART ENDING   -->
+<!--                        -->  
+<!--                        -->
+</body>
+</html>
